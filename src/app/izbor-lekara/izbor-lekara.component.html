@@ -1,0 +1,45 @@
+<div>
+    <h2>Izbor lekara</h2>
+    <form>
+        <fieldset>
+            <div class="form-group row">
+                <label class="col-sm-3 col-form-label">Naziv ustanove: </label>
+                <div class="col-sm-3">
+                    <input type="text" class="form-control" name="nazivUstanove" [(ngModel)]="nazivUstanove">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label class="col-sm-3 col-form-label">Tip obrasca: </label>
+                <div class="col-sm-3">
+                    <input type="text" class="form-control" name="tipObrasca" [(ngModel)]="tipObrasca">
+                </div>
+            </div>
+            <div *ngIf="izabran" class="form-group row">
+                <label class="col-sm-3 col-form-label">Razlog promene: </label>
+                <div class="col-sm-3">
+                    <input type="text" class="form-control" name="razlogPromene" [(ngModel)]="razlogPromene">
+                </div>
+            </div>
+            <div *ngIf="izabran" class="form-group row">
+                <label class="col-sm-3 col-form-label">Prethodni lekar: </label>
+                <div class="col-sm-3">
+                    <input type="text" class="form-control" name="razlogPromene" [(ngModel)]="prethodniLekar">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label class="col-sm-3 col-form-label">Novi lekar: </label>
+                <div class="col-sm-3">
+                    <select type="text" class="form-control" name="noviLekar" [(ngModel)]="noviLekar">
+                      <option>Lekar1</option>
+                      <option>Lekar2</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-3">
+                    <input type="submit" id="loginButton" (click)="izbor()" value="Izaberi" class="btn btn-primary">
+                </div>
+            </div>
+        </fieldset>
+    </form>
+</div>

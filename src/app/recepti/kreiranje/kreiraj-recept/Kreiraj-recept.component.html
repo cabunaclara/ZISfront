@@ -1,63 +1,61 @@
-
-
 <div class="container">
-  <h2>Recept</h2>
-  <br><br>
-  <form>
-    <fieldset>
-      <div class="form-group row">
-          <label class="col-sm-3 col-form-label" >Naziv zdravstvene ustanove: </label>
-          <div class="col-sm-3">
-            <input type="text" class="form-control" name="ustanova" [(ngModel)]="ustanova">
-          </div>
-      </div>
+    <h2>Recept</h2>
+    <br><br>
+    <form>
+        <fieldset>
+            <div class="form-group row">
+                <label class="col-sm-3 col-form-label">Naziv zdravstvene ustanove: </label>
+                <div class="col-sm-3">
+                    <input type="text" class="form-control" name="ustanova" [(ngModel)]="ustanova">
+                </div>
+            </div>
 
-      <div class="form-group row">
-          <label class="col-sm-3 col-form-label">Prezime osiguranog lica: </label>
-          <div class="col-sm-3">
-            <input type="text" class="form-control" name="prezime" [(ngModel)]="prezimePacijent">
-          </div>
-      </div>
+            <div class="form-group row">
+                <label class="col-sm-3 col-form-label">Prezime osiguranog lica: </label>
+                <div class="col-sm-3">
+                    <input type="text" class="form-control" name="prezime" [(ngModel)]="prezimePacijent">
+                </div>
+            </div>
 
-      <div class="form-group row">
-          <label class="col-sm-3 col-form-label">Ime osiguranog lica: </label>
-          <div class="col-sm-3">
-              <input type="text" class="form-control" name="ime" [(ngModel)]="imePacijent">
-          </div>
-      </div>
+            <div class="form-group row">
+                <label class="col-sm-3 col-form-label">Ime osiguranog lica: </label>
+                <div class="col-sm-3">
+                    <input type="text" class="form-control" name="ime" [(ngModel)]="imePacijent">
+                </div>
+            </div>
 
-      <div class="form-group row">
-          <label class="col-sm-3 col-form-label">Datum rođenja osiguranog lica: </label>
-          <div class="col-sm-3">
-              <input type="date" class="form-control" name="datumRodjenja" [(ngModel)]="datumPacijent">
-          </div>
-      </div>
+            <div class="form-group row">
+                <label class="col-sm-3 col-form-label">Datum rođenja osiguranog lica: </label>
+                <div class="col-sm-3">
+                    <input type="date" class="form-control" name="datumRodjenja" [(ngModel)]="datumPacijent">
+                </div>
+            </div>
 
-      <div class="form-group row">
-          <label class="col-sm-3 col-form-label">Broj zdravstvene knjižice: </label>
-          <div class="col-sm-3">
-              <input type="text" class="form-control" name="brKnjizice" [(ngModel)]="brKnjizice">
-          </div>
-      </div>
+            <div class="form-group row">
+                <label class="col-sm-3 col-form-label">Broj zdravstvene knjižice: </label>
+                <div class="col-sm-3">
+                    <input type="text" class="form-control" name="brKnjizice" [(ngModel)]="brKnjizice">
+                </div>
+            </div>
 
-      <div class="form-group row">
-          <label class="col-sm-3 col-form-label">Datum propisivanja leka: </label>
-          <div class="col-sm-3">
-              <input type="date" class="form-control" name="datumIzdavanjaLeka" [(ngModel)]="datumLek">
-          </div>
-      </div>
+            <div class="form-group row">
+                <label class="col-sm-3 col-form-label">Datum propisivanja leka: </label>
+                <div class="col-sm-3">
+                    <input type="date" class="form-control" name="datumIzdavanjaLeka" [(ngModel)]="datumLek">
+                </div>
+            </div>
 
-      <div class="form-group row">
-          <label class="col-sm-3 col-form-label">Broj kartona: </label>
-          <div class="col-sm-3">
-              <input type="text" class="form-control" name="brKarton" [(ngModel)]="brKarton">
-          </div>
-      </div>
+            <div class="form-group row">
+                <label class="col-sm-3 col-form-label">Broj kartona: </label>
+                <div class="col-sm-3">
+                    <input type="text" class="form-control" name="brKarton" [(ngModel)]="brKarton">
+                </div>
+            </div>
 
-      <div class="form-group row">
-        <label class="col-sm-3 col-form-label">Osnova oslobadjanja od paricipacije: </label>
-        <div class="col-sm-3">
-            <select id="pariticipacija" [(ngModel)]="participacija" name="participacija" class="form-control">
+            <div class="form-group row">
+                <label class="col-sm-3 col-form-label">Osnova oslobadjanja od paricipacije: </label>
+                <div class="col-sm-3">
+                    <select id="pariticipacija" [(ngModel)]="participacija" name="participacija" class="form-control">
               <option value=512 selected> 512 </option>
               <option value=511 > 511</option>
               <option value=513> 513 </option>
@@ -68,36 +66,36 @@
               <option value=234> 234 </option>
               <option value=235> 235 </option>
             </select>
-        </div>
-      </div>
+                </div>
+            </div>
 
-      <div class="form-group row">
-        <label class="col-sm-3 col-form-label">Terapija: </label>
-        <div class="col-sm-3">
-          <textarea class="form-control" id="exampleFormControlTextarea1" rows="4" name="terapija" [(ngModel)]="terapija"></textarea>
-        </div>
-      </div>
+            <div class="form-group row">
+                <label class="col-sm-3 col-form-label">Terapija: </label>
+                <div class="col-sm-3">
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="4" name="terapija" [(ngModel)]="terapija"></textarea>
+                </div>
+            </div>
 
-      <div class="form-group row">
-        <label class="col-sm-3 col-form-label">Šifra propisanog leka: </label>
-        <div class="col-sm-3">
-            <input type="text" class="form-control" name="sifraLeka" [(ngModel)]="sifraLeka">
-        </div>
-      </div>
+            <div class="form-group row">
+                <label class="col-sm-3 col-form-label">Šifra propisanog leka: </label>
+                <div class="col-sm-3">
+                    <input type="text" class="form-control" name="sifraLeka" [(ngModel)]="sifraLeka">
+                </div>
+            </div>
 
-      <div class="form-group row">
-        <label class="col-sm-3 col-form-label">Šifra dijagnoza: </label>
-        <div class="col-sm-3">
-            <input type="text" class="form-control" name="dijagnoza" [(ngModel)]="sifraDijagnoze">
-        </div>
-      </div>
+            <div class="form-group row">
+                <label class="col-sm-3 col-form-label">Šifra dijagnoza: </label>
+                <div class="col-sm-3">
+                    <input type="text" class="form-control" name="dijagnoza" [(ngModel)]="sifraDijagnoze">
+                </div>
+            </div>
 
-      <div class="form-group">
-        <div class="col-sm-3">
-          <input type="submit" id="loginButton" (click)="kreirajRecept()" value="Izdaj recept" class="btn btn-primary">
-        </div>
-      </div>
-    </fieldset>
-  </form>
+            <div class="form-group">
+                <div class="col-sm-3">
+                    <input type="submit" id="loginButton" (click)="kreirajRecept()" value="Izdaj recept" class="btn btn-primary">
+                </div>
+            </div>
+        </fieldset>
+    </form>
 
 </div>
