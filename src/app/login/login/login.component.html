@@ -1,0 +1,29 @@
+
+<div class="container">
+  <h2>Prijava</h2>
+  <br><br>
+  <form>
+      <fieldset>
+          <div class="form-group">
+              <label class="col-sm-2 col-form-label" >Korisničko ime: </label>
+              <div class="col-sm-3">
+                <input type="text" class="form-control" name="korisnickoIme" [(ngModel)]="korisnickoIme">
+              </div>
+          </div>
+
+          <div class="form-group">
+              <label class="col-sm-2 col-form-label">Lozinka: </label>
+              <div class="col-sm-3">
+                <input type="password" class="form-control" name="lozinka" [(ngModel)]="lozinka">
+              </div>
+          </div>
+
+          <div class="form-group">
+            <div class="col-sm-3">
+              <input type="submit" id="loginButton" (click)="prijava()" value="Prijava" class="btn btn-primary">
+            </div>
+          </div>
+      </fieldset>
+  </form>
+
+</div>
