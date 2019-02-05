@@ -39,7 +39,7 @@ export class KreirajReceptComponent implements OnInit {
     console.log(this.brKarton);
     console.log(this.participacija);
     console.log(this.terapija);
-    console.log(this.sifraLek);
+    console.log(this.sifraLeka);
     console.log(this.sifraDijagnoze);
   }
 
