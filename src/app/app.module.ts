@@ -1,3 +1,4 @@
+import { KreiranjeUputaComponent } from './uputi/kreiranje/kreiranje-uputa/kreiranje-uputa.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
@@ -11,6 +12,8 @@ import { KreirajReceptComponent } from './recepti/kreiranje/kreiraj-recept/kreir
 import { IzborLekaraComponent } from './izbor-lekara/izbor-lekara.component';
 import { ZakazivanjeTerminaComponent } from './zakazivanje-termina/zakazivanje-termina.component';
 import { ProfilPacijentaComponent } from './profil-pacijenta/profil-pacijenta.component';
+import { KreirajIzvestajComponent } from './izvestaji/kreiranje/kreiraj-izvestaj/kreiraj-izvestaj.component';
+
 
 @NgModule({
   declarations: [
@@ -21,7 +24,9 @@ import { ProfilPacijentaComponent } from './profil-pacijenta/profil-pacijenta.co
     KreirajReceptComponent,
     IzborLekaraComponent,
     ZakazivanjeTerminaComponent,
-    ProfilPacijentaComponent
+    ProfilPacijentaComponent,
+    KreirajIzvestajComponent,
+    KreiranjeUputaComponent
   ],
   imports: [
     BrowserModule,
@@ -32,6 +37,9 @@ import { ProfilPacijentaComponent } from './profil-pacijenta/profil-pacijenta.co
       {path: 'kreirajRecept', component: KreirajReceptComponent},
       {path: 'izborLekara', component: IzborLekaraComponent},
       {path: 'zakazivanje', component: ZakazivanjeTerminaComponent},
+      {path: 'kreirajIzvestaj', component: KreirajIzvestajComponent},
+      {path: 'kreirajUput', component: KreiranjeUputaComponent},
+
       {path: '', redirectTo: '/welcome', pathMatch: 'full'},
       { path: '**', component: WelcomeComponent, pathMatch : 'full'}
     ]),
